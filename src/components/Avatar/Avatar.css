@@ -1,0 +1,51 @@
+.avatar {
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.avatar span, .avatar img {
+    border-radius: 50%;
+}
+
+.avatar img {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+
+}
+
+.avatar span {
+    cursor:default;
+    text-align: center;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    padding:0.25rem;    
+    margin:0.75rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    background: linear-gradient(to bottom right, var(--skeleton-light), var(--background-light));
+}
+
+.avatar .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    background-color: black;
+    color: var(--text);
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.25rem;
+    position: absolute;
+    font-size: 0.75rem;
+    top: 1rem;
+    right: 100%;
+    transition: opacity 0.1s ease-in-out;
+    transition-delay:0.2s;
+}
+
+.avatar:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+}

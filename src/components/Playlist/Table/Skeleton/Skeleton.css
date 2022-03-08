@@ -1,0 +1,8 @@
+tr.skeleton {
+    height: 50px;
+    border-left: solid 5px var(--skeleton-base);
+}
+
+tr.skeleton td{
+    padding-right: 1rem;
+}

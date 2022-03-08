@@ -1,0 +1,53 @@
+.playlist-table-container {
+    display:block;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.playlist-table-container table {
+    border-collapse: collapse;
+    overflow-x: hidden;
+}
+
+.playlist-table-container th:first-child,.playlist-table-container td:first-child {
+  width: 100%;
+}
+
+.playlist-table-container th:last-child,.playlist-table-container td:last-child {
+    border-right: 3px solid var(--background-light);
+}
+
+.playlist-table-container thead tr th {
+    position: sticky;
+    top: -2px;
+    background-color: var(--background-light);    
+    z-index: 2;
+  }
+  
+  .playlist-table-container thead tr th span {
+    cursor: pointer;
+    user-select: none;
+    white-space: pre;
+    display: flex;
+    gap: 1ch;
+    align-items: flex-end;
+  }
+
+  .playlist-table-container th {
+    text-align: left;
+    padding: 0.5rem;
+    padding-left:0;
+    color: var(--text-primary);
+}
+
+.playlist-table-container tbody tr:hover {
+  color: white;
+}
+
+.playlist-table-container tr td:first-child {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 30vw;
+  padding-left: 0.5rem;
+}

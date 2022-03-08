@@ -1,0 +1,35 @@
+.playlist-search  {
+    display:flex;
+    align-self: flex-end;
+    margin: 0.5rem 1rem;
+    box-sizing: border-box;
+}
+
+.playlist-search:focus-within {
+    box-shadow: 0 0 8px #0b7914, 0 -2px 8px #0b791433;
+}
+
+.playlist-search input {
+    border-radius: 5px 0 0 5px;
+    border: 1px solid black;
+    border-right:none !important;
+    padding:0.25rem;
+    outline: none;
+}
+
+.playlist-search button {
+    display: grid;
+    place-items: center;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid black;
+    border-left:none !important;
+    padding:0.25rem;
+    background: none;
+    cursor:pointer;
+    background-color: white;
+}
+
+.playlist-search button img {
+    width:1rem;
+    height:1rem;
+}
